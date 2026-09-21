@@ -112,6 +112,19 @@ a:hover { text-decoration: underline; }
   box-shadow: var(--shadow);
   margin-bottom: 20px;
 }
+.draft-badge {
+  display: inline-block;
+  margin-bottom: 14px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.03em;
+  color: var(--accent-2);
+  background: color-mix(in srgb, var(--accent-2) 14%, transparent);
+  border: 1px solid color-mix(in srgb, var(--accent-2) 40%, transparent);
+}
+
 .hero__eyebrow {
   margin: 0;
   color: var(--accent);
@@ -240,6 +253,16 @@ a:hover { text-decoration: underline; }
   padding: 18px;
 }
 .resume__block h3 { margin: 0 0 8px; font-size: 0.95rem; }
+
+.timeline { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 16px; }
+.timeline li:not(:last-child) { padding-bottom: 16px; border-bottom: 1px solid var(--border); }
+.timeline__role { margin: 0 0 2px; font-weight: 600; }
+.timeline__period {
+  margin: 0 0 6px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.78rem;
+  color: var(--accent);
+}
 
 .callout {
   background: var(--bg-elev-2);
