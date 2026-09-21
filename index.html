@@ -1,1 +1,194 @@
-"yo"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>spoomyfly — Software Developer</title>
+<meta name="description" content="spoomyfly — software developer. GitHub profile, skills and projects." />
+<link rel="icon" href="https://github.com/spoomyfly.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a href="#top" class="nav__brand">spoomyfly<span class="dot">.</span></a>
+    <nav class="nav__links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle color theme" title="Toggle theme">
+      <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 18a6 6 0 100-12 6 6 0 000 12zm0-16a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm0 18a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM4.22 4.22a1 1 0 011.42 0l.7.7a1 1 0 11-1.42 1.42l-.7-.7a1 1 0 010-1.42zm12.72 12.72a1 1 0 011.42 0l.7.7a1 1 0 11-1.42 1.42l-.7-.7a1 1 0 010-1.42zM2 12a1 1 0 011-1h1a1 1 0 110 2H3a1 1 0 01-1-1zm18 0a1 1 0 011-1h1a1 1 0 110 2h-1a1 1 0 01-1-1zM4.22 19.78a1 1 0 010-1.42l.7-.7a1 1 0 111.42 1.42l-.7.7a1 1 0 01-1.42 0zM16.94 6.34a1 1 0 010-1.42l.7-.7a1 1 0 111.42 1.42l-.7.7a1 1 0 01-1.42 0z"/></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M21.64 13a9 9 0 11-10.63-10.63 1 1 0 011.11 1.4A7 7 0 1020.24 11.9a1 1 0 011.4 1.1z"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero__inner">
+      <img class="hero__avatar" src="https://github.com/spoomyfly.png" alt="spoomyfly avatar" width="128" height="128" loading="eager" />
+      <p class="hero__eyebrow">Hi, I'm</p>
+      <h1 class="hero__name">spoomyfly</h1>
+      <p class="hero__role">Software Developer</p>
+      <p class="hero__bio" data-editable="bio">
+        Backend &amp; full-stack developer working across C#/.NET, JavaScript/TypeScript and Vue.
+        Building small tools, bots and data-visualization apps — this line is a placeholder,
+        <a href="#resume">see the note in Resume</a> for what to fill in next.
+      </p>
+
+      <div class="hero__stats" id="gh-stats">
+        <div class="stat"><span class="stat__value" id="stat-repos">15</span><span class="stat__label">public repos</span></div>
+        <div class="stat"><span class="stat__value" id="stat-followers">3</span><span class="stat__label">followers</span></div>
+        <div class="stat"><span class="stat__value">2017</span><span class="stat__label">on GitHub since</span></div>
+      </div>
+
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="https://github.com/spoomyfly" target="_blank" rel="noopener">
+          <svg viewBox="0 0 16 16" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+          GitHub
+        </a>
+        <a class="btn btn--ghost" href="#projects">View projects</a>
+        <a class="btn btn--ghost" href="#contact">Contact</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2 class="section__title"><span class="idx">01</span> About</h2>
+    <div class="about">
+      <p data-editable="about">
+        I'm a software developer active on GitHub since 2017, working mostly with
+        <strong>C#/.NET</strong>, <strong>JavaScript/TypeScript</strong> and <strong>Vue</strong>.
+        My public repositories range from gameplay/algorithm experiments (Battleships network game,
+        a genetic algorithm, a Dota leaderboard) to web tooling (a cost-visualization app, a scraper,
+        a Telegram bot) and Blazor/.NET playgrounds.
+      </p>
+      <p class="muted">
+        This paragraph — plus a proper "about me" — was auto-drafted from public GitHub data.
+        Replace it with real background once you share it (see the note in <a href="#resume">Resume</a>).
+      </p>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <h2 class="section__title"><span class="idx">02</span> Skills</h2>
+    <div class="skills">
+      <div class="skill-group">
+        <h3>Languages</h3>
+        <div class="chips">
+          <span class="chip">C#</span>
+          <span class="chip">TypeScript</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">HTML / CSS</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Frameworks &amp; tools</h3>
+        <div class="chips">
+          <span class="chip">.NET / Blazor</span>
+          <span class="chip">Vue.js</span>
+          <span class="chip">Git &amp; GitHub</span>
+          <span class="chip">REST APIs</span>
+        </div>
+      </div>
+    </div>
+    <p class="muted small">Detected from public repository languages — confirm / extend this list in Resume.</p>
+  </section>
+
+  <section id="projects" class="section">
+    <h2 class="section__title"><span class="idx">03</span> Projects</h2>
+    <div class="projects" id="projects-grid">
+      <!-- Populated live from the GitHub API; static fallback cards below are replaced on success. -->
+      <article class="card">
+        <h3><a href="https://github.com/spoomyfly/Cost_visualization" target="_blank" rel="noopener">Cost_visualization</a></h3>
+        <p class="card__lang">JavaScript</p>
+        <p class="card__desc">Transaction / expense tracking &amp; visualization app.</p>
+      </article>
+      <article class="card">
+        <h3><a href="https://github.com/spoomyfly/Prediction-wizard" target="_blank" rel="noopener">Prediction-wizard</a></h3>
+        <p class="card__lang">TypeScript</p>
+        <p class="card__desc">TypeScript project.</p>
+      </article>
+      <article class="card">
+        <h3><a href="https://github.com/spoomyfly/TelegramBOt" target="_blank" rel="noopener">TelegramBOt</a></h3>
+        <p class="card__lang">C#</p>
+        <p class="card__desc">Telegram bot written in C#.</p>
+      </article>
+      <article class="card">
+        <h3><a href="https://github.com/spoomyfly/BlazorHelloWorld" target="_blank" rel="noopener">BlazorHelloWorld</a></h3>
+        <p class="card__lang">CSS / Blazor</p>
+        <p class="card__desc">App for listing current plants.</p>
+      </article>
+      <article class="card">
+        <h3><a href="https://github.com/spoomyfly/GeneticAlgorithm" target="_blank" rel="noopener">GeneticAlgorithm</a></h3>
+        <p class="card__lang">C#</p>
+        <p class="card__desc">Genetic algorithm implementation.</p>
+      </article>
+      <article class="card">
+        <h3><a href="https://github.com/spoomyfly/DotaLeaderBoards" target="_blank" rel="noopener">DotaLeaderBoards</a></h3>
+        <p class="card__lang">C#</p>
+        <p class="card__desc">Leaderboard app for Dota.</p>
+      </article>
+    </div>
+    <p class="muted small" id="projects-note">Loading latest repositories from GitHub…</p>
+  </section>
+
+  <section id="resume" class="section">
+    <h2 class="section__title"><span class="idx">04</span> Resume</h2>
+
+    <div class="resume">
+      <div class="resume__block">
+        <h3>Experience</h3>
+        <p class="muted">No work history provided yet — add roles here (company, title, dates, 2-3 bullet points per role).</p>
+      </div>
+      <div class="resume__block">
+        <h3>Education</h3>
+        <p class="muted">No education info provided yet.</p>
+      </div>
+      <div class="resume__block">
+        <h3>Contact details</h3>
+        <p class="muted">No email / phone / location provided yet — see Contact section.</p>
+      </div>
+    </div>
+
+    <div class="callout">
+      <strong>This CV is a draft generated from public GitHub data only.</strong>
+      <p>To turn it into a real resume, answer these and the site will be updated:</p>
+      <ol>
+        <li>Full name and preferred title (e.g. "Backend Developer", "Full-Stack Engineer")?</li>
+        <li>Short professional summary (2-3 sentences)?</li>
+        <li>Work experience: company, role, period, key responsibilities/achievements for each job?</li>
+        <li>Education: school/university, degree, years?</li>
+        <li>Skills to highlight beyond what's in your repos (languages, frameworks, DBs, cloud, tools)?</li>
+        <li>Contact info to publish: email, phone (optional), city/timezone, LinkedIn/Telegram/other links?</li>
+        <li>Any certificates, courses or notable achievements?</li>
+        <li>Which 3-6 projects should be featured first, and one line on each (what it does / your role)?</li>
+        <li>A downloadable PDF resume to link, or should the page itself be the resume?</li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="contact" class="section section--contact">
+    <h2 class="section__title"><span class="idx">05</span> Contact</h2>
+    <p class="muted">Reach out on GitHub for now — other channels will appear here once provided.</p>
+    <div class="hero__actions">
+      <a class="btn btn--primary" href="https://github.com/spoomyfly" target="_blank" rel="noopener">github.com/spoomyfly</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>&copy; <span id="year"></span> spoomyfly. Built as a static site on GitHub Pages.</p>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
